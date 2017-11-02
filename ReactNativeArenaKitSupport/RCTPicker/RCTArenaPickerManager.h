@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <React/RCTBridgeModule.h>
+#import "React/RCTBridgeModule.h"
 
 #import "RCTArenaPicker.h"
 
-#import <React/RCTEventEmitter.h>
+#import "React/RCTEventEmitter.h"
 
 
 @interface RCTArenaPickerManager : RCTEventEmitter<RCTBridgeModule>
