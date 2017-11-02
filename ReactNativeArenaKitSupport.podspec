@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReactNativeArenaKitSupport"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "支持Arenakit运行"
 
   # This description is used to generate tags and improve search results.
@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/mousesprite/ReactNativeArenaKitSupport.git", :tag => "#{s.version}" }
 
-  s.vendored_frameworks = "frameworks/ArenaShare.framework"
+  s.vendored_frameworks = "frameworks/ReactNativeArenaKitSupport.framework"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,8 +93,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ReactNativeArenaKitSupport", "ReactNativeArenaKitSupport/**/*.{h,m}"
-  s.exclude_files = "ReactNativeArenaKitSupport/Exclude"
+  #s.source_files  = "ReactNativeArenaKitSupport", "ReactNativeArenaKitSupport/**/*.{h,m}"
+  #s.exclude_files = "ReactNativeArenaKitSupport/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 

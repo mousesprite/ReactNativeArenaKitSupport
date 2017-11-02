@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5E6D143F1FA72277002BA444 /* ReactNativeArenaKitSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6D143D1FA72277002BA444 /* ReactNativeArenaKitSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5ED7FBBC1FA724CC00C76595 /* RCTArenaPickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED7FBBA1FA724CC00C76595 /* RCTArenaPickerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED7FBBC1FA724CC00C76595 /* RCTArenaPickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED7FBBA1FA724CC00C76595 /* RCTArenaPickerManager.h */; };
 		5ED7FBBD1FA724CC00C76595 /* RCTArenaPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7FBBB1FA724CC00C76595 /* RCTArenaPickerManager.m */; };
-		5ED7FBC01FA7253800C76595 /* RCTArenaPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED7FBBE1FA7253800C76595 /* RCTArenaPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED7FBC01FA7253800C76595 /* RCTArenaPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED7FBBE1FA7253800C76595 /* RCTArenaPicker.h */; };
 		5ED7FBC11FA7253800C76595 /* RCTArenaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7FBBF1FA7253800C76595 /* RCTArenaPicker.m */; };
 		85F009198A20B6159CF1F08B /* libPods-ReactNativeArenaKitSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C91C73E417086EAAA3C72 /* libPods-ReactNativeArenaKitSupport.a */; };
 /* End PBXBuildFile section */
@@ -103,9 +103,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6D143F1FA72277002BA444 /* ReactNativeArenaKitSupport.h in Headers */,
 				5ED7FBC01FA7253800C76595 /* RCTArenaPicker.h in Headers */,
 				5ED7FBBC1FA724CC00C76595 /* RCTArenaPickerManager.h in Headers */,
-				5E6D143F1FA72277002BA444 /* ReactNativeArenaKitSupport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
