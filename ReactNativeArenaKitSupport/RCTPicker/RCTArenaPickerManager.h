@@ -11,9 +11,9 @@
 
 #import "RCTArenaPicker.h"
 
-#import "React/RCTEventEmitter.h"
+//#import "React/RCTEventEmitter.h"
 
 
-@interface RCTArenaPickerManager : RCTEventEmitter<RCTBridgeModule>
+@interface RCTArenaPickerManager : NSObject<RCTBridgeModule>
 
 @end

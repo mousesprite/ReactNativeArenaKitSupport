@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReactNativeArenaKitSupport"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "支持Arenakit运行"
 
   # This description is used to generate tags and improve search results.
@@ -133,35 +133,12 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => [
-    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/ReactNativeArenaKit/Pods/Headers/Public/BuddyBuildSDK",
-    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/ReactNativeArenaKit/Pods/Headers/Public/React",
-    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/ReactNativeArenaKit/Pods/Headers/Public/Yoga"
-    ].join(' '),
-
-    "FRAMEWORK_SEARCH_PATHS" => [
-    	"/Users/chenyunjie/workspace/code/git.dev.qianmi.com/ReactNativeArenaKit/Pods/BuddyBuildSDK"
-    	].join(' '),
-
-    "OTHER_CFLAGS" => [
-    	"-isystem",
-    	"${PODS_ROOT}/Headers/Public",
-    	"-isystem",
-    	"${PODS_ROOT}/Headers/Public/BuddyBuildSDK",
-    	"-isystem",
-    	"${PODS_ROOT}/Headers/Public/React",
-    	"-isystem",
-    	"${PODS_ROOT}/Headers/Public/Yoga"
-
-    	].join(' '),
-    "OTHER_LDFLAGS" => [
-    	"-ObjC",
-    	"-l\"React\"",
-    	"-l\"Yoga\""
-
+  	"$(inherited)",
+    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/react-native-arenakit-support/ios/ReactNativeArenaKitSupport/Pods/Headers/Public/BuddyBuildSDK",
+    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/react-native-arenakit-support/ios/ReactNativeArenaKitSupport/Pods/Headers/Public/React",
+    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/react-native-arenakit-support/ios/ReactNativeArenaKitSupport/Pods/Headers/Public/Yoga"
     ].join(' ')
 
   }
-
-  # s.dependency "JSONKit", "~> 1.4"
 
 end

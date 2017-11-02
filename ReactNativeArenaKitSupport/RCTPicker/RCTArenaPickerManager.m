@@ -73,7 +73,7 @@ RCT_EXPORT_METHOD(_init:(NSDictionary *)indic){
     __weak typeof(self) weakSelf = self;
     _pick.bolock=^(NSDictionary *backinfoArry){
         dispatch_async(dispatch_get_main_queue(), ^{
-            [weakSelf sendEventWithName:@"pickerEvent" body:backinfoArry];
+            //[weakSelf sendEventWithName:@"pickerEvent" body:backinfoArry];
         });
     };
     
