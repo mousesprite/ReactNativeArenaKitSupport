@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5E6D143F1FA72277002BA444 /* ReactNativeArenaKitSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6D143D1FA72277002BA444 /* ReactNativeArenaKitSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED7FBBC1FA724CC00C76595 /* RCTArenaPickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED7FBBA1FA724CC00C76595 /* RCTArenaPickerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED7FBBD1FA724CC00C76595 /* RCTArenaPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7FBBB1FA724CC00C76595 /* RCTArenaPickerManager.m */; };
+		5ED7FBC01FA7253800C76595 /* RCTArenaPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED7FBBE1FA7253800C76595 /* RCTArenaPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED7FBC11FA7253800C76595 /* RCTArenaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7FBBF1FA7253800C76595 /* RCTArenaPicker.m */; };
+		85F009198A20B6159CF1F08B /* libPods-ReactNativeArenaKitSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C91C73E417086EAAA3C72 /* libPods-ReactNativeArenaKitSupport.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E6D143A1FA72277002BA444 /* ReactNativeArenaKitSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactNativeArenaKitSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6D143D1FA72277002BA444 /* ReactNativeArenaKitSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeArenaKitSupport.h; sourceTree = "<group>"; };
 		5E6D143E1FA72277002BA444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED7FBBA1FA724CC00C76595 /* RCTArenaPickerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTArenaPickerManager.h; sourceTree = "<group>"; };
+		5ED7FBBB1FA724CC00C76595 /* RCTArenaPickerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTArenaPickerManager.m; sourceTree = "<group>"; };
+		5ED7FBBE1FA7253800C76595 /* RCTArenaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTArenaPicker.h; sourceTree = "<group>"; };
+		5ED7FBBF1FA7253800C76595 /* RCTArenaPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTArenaPicker.m; sourceTree = "<group>"; };
+		893FDB81CB8185D42D8114B5 /* Pods-ReactNativeArenaKitSupport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeArenaKitSupport.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeArenaKitSupport/Pods-ReactNativeArenaKitSupport.release.xcconfig"; sourceTree = "<group>"; };
+		BE54EFBEAF82813A0F1ECDF7 /* Pods-ReactNativeArenaKitSupport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeArenaKitSupport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeArenaKitSupport/Pods-ReactNativeArenaKitSupport.debug.xcconfig"; sourceTree = "<group>"; };
+		BF1C91C73E417086EAAA3C72 /* libPods-ReactNativeArenaKitSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeArenaKitSupport.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F009198A20B6159CF1F08B /* libPods-ReactNativeArenaKitSupport.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B69CA809DC730A4E2215394 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE54EFBEAF82813A0F1ECDF7 /* Pods-ReactNativeArenaKitSupport.debug.xcconfig */,
+				893FDB81CB8185D42D8114B5 /* Pods-ReactNativeArenaKitSupport.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E6739DAF0F1305CCDDA1D85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF1C91C73E417086EAAA3C72 /* libPods-ReactNativeArenaKitSupport.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E6D14301FA72277002BA444 = {
 			isa = PBXGroup;
 			children = (
 				5E6D143C1FA72277002BA444 /* ReactNativeArenaKitSupport */,
 				5E6D143B1FA72277002BA444 /* Products */,
+				5B69CA809DC730A4E2215394 /* Pods */,
+				5E6739DAF0F1305CCDDA1D85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +78,22 @@
 		5E6D143C1FA72277002BA444 /* ReactNativeArenaKitSupport */ = {
 			isa = PBXGroup;
 			children = (
+				5ED7FBB91FA7242500C76595 /* RCTPicker */,
 				5E6D143D1FA72277002BA444 /* ReactNativeArenaKitSupport.h */,
 				5E6D143E1FA72277002BA444 /* Info.plist */,
 			);
 			path = ReactNativeArenaKitSupport;
+			sourceTree = "<group>";
+		};
+		5ED7FBB91FA7242500C76595 /* RCTPicker */ = {
+			isa = PBXGroup;
+			children = (
+				5ED7FBBA1FA724CC00C76595 /* RCTArenaPickerManager.h */,
+				5ED7FBBB1FA724CC00C76595 /* RCTArenaPickerManager.m */,
+				5ED7FBBE1FA7253800C76595 /* RCTArenaPicker.h */,
+				5ED7FBBF1FA7253800C76595 /* RCTArenaPicker.m */,
+			);
+			path = RCTPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,6 +103,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED7FBC01FA7253800C76595 /* RCTArenaPicker.h in Headers */,
+				5ED7FBBC1FA724CC00C76595 /* RCTArenaPickerManager.h in Headers */,
 				5E6D143F1FA72277002BA444 /* ReactNativeArenaKitSupport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,10 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E6D14421FA72277002BA444 /* Build configuration list for PBXNativeTarget "ReactNativeArenaKitSupport" */;
 			buildPhases = (
+				BFA89748FF30A2B408F5B725 /* [CP] Check Pods Manifest.lock */,
 				5E6D14351FA72277002BA444 /* Sources */,
 				5E6D14361FA72277002BA444 /* Frameworks */,
 				5E6D14371FA72277002BA444 /* Headers */,
 				5E6D14381FA72277002BA444 /* Resources */,
+				C8A1F81A13A07FF2C83D5E3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +174,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BFA89748FF30A2B408F5B725 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeArenaKitSupport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A1F81A13A07FF2C83D5E3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativeArenaKitSupport/Pods-ReactNativeArenaKitSupport-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E6D14351FA72277002BA444 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED7FBBD1FA724CC00C76595 /* RCTArenaPickerManager.m in Sources */,
+				5ED7FBC11FA7253800C76595 /* RCTArenaPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +335,7 @@
 		};
 		5E6D14431FA72277002BA444 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE54EFBEAF82813A0F1ECDF7 /* Pods-ReactNativeArenaKitSupport.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -269,6 +356,7 @@
 		};
 		5E6D14441FA72277002BA444 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893FDB81CB8185D42D8114B5 /* Pods-ReactNativeArenaKitSupport.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
