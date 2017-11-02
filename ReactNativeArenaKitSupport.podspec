@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReactNativeArenaKitSupport"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "支持Arenakit运行"
 
   # This description is used to generate tags and improve search results.
@@ -82,6 +82,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/mousesprite/ReactNativeArenaKitSupport.git", :tag => "#{s.version}" }
 
+  s.vendored_frameworks = "frameworks/ArenaShare.framework"
+
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -121,7 +123,7 @@ Pod::Spec.new do |s|
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  # s.libraries = "React", "xml2"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

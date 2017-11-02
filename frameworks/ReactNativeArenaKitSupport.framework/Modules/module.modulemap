@@ -1,0 +1,6 @@
+framework module ReactNativeArenaKitSupport {
+  umbrella header "ReactNativeArenaKitSupport.h"
+
+  export *
+  module * { export * }
+}
