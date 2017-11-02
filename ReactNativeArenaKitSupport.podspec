@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReactNativeArenaKitSupport"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "支持Arenakit运行"
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -132,7 +132,18 @@ Pod::Spec.new do |s|
 
   # s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => [ "${PODS_ROOT}/Headers/Public" ] }
+
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/Headers/Public/UMengSocial" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => [
+    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/ReactNativeArenaKit/Pods/Headers/Public/UMengSocial",
+    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/ReactNativeArenaKit/Pods/Headers/Public/BuddyBuildSDK",
+    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/ReactNativeArenaKit/Pods/Headers/Public/React",
+    "/Users/chenyunjie/workspace/code/git.dev.qianmi.com/ReactNativeArenaKit/Pods/Headers/Public/Yoga"
+    ].join(' ')
+
+  }
+
   # s.dependency "JSONKit", "~> 1.4"
 
 end
